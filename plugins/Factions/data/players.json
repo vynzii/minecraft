@@ -1,0 +1,28 @@
+{
+  "2dbc3e87-59f2-4882-83b6-77423511e662": {
+    "factionId": "1",
+    "role": "ADMIN",
+    "title": "",
+    "power": 10.0,
+    "powerBoost": 0.0,
+    "lastPowerUpdateTime": 1594476589056,
+    "lastLoginTime": 1594476589056,
+    "chatMode": "PUBLIC",
+    "ignoreAllianceChat": false,
+    "id": "2dbc3e87-59f2-4882-83b6-77423511e662",
+    "name": "Vynzii",
+    "monitorJoins": false,
+    "spyingChat": false,
+    "showScoreboard": true,
+    "warmupTask": 0,
+    "isAdminBypassing": false,
+    "kills": 0,
+    "deaths": 31,
+    "willAutoLeave": false,
+    "mapHeight": 17,
+    "isFlying": false,
+    "isAutoFlying": false,
+    "flyTrailsState": false,
+    "seeingChunk": false
+  }
+}

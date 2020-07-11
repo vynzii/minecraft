@@ -1,0 +1,30 @@
+lastAccountName: Vynzii
+timestamps:
+  login: 1594476179423
+  logout: 1594476589058
+  lastteleport: 1594320789070
+ipAddress: 192.168.1.219
+lastlocation:
+  world: world
+  x: 5191.142719178157
+  y: 80.12557481102994
+  z: 1283.54472608305
+  yaw: 146.01611
+  pitch: 53.96545
+godmode: true
+logoutlocation:
+  world: world
+  x: 5174.457707508788
+  y: 63.0
+  z: 1303.799405671779
+  yaw: -252.53809
+  pitch: 6.549376
+afk: false
+homes:
+  home:
+    world: world
+    x: 5283.699999988079
+    y: 11.0
+    z: -2687.300000011921
+    yaw: -263.4599
+    pitch: 26.454279

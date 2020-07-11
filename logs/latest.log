@@ -1,0 +1,1866 @@
+[16:01:44] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[16:01:46] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[16:01:49] [Server-Worker-12/INFO]: Loaded 7 recipes
+[16:01:52] [Server thread/INFO]: Starting minecraft server version 1.16.1
+[16:01:52] [Server thread/INFO]: Loading properties
+[16:01:52] [Server thread/INFO]: This server is running Paper version git-Paper-44 (MC: 1.16.1) (Implementing API version 1.16.1-R0.1-SNAPSHOT)
+[16:01:52] [Server thread/INFO]: Debug logging is disabled
+[16:01:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:01:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:01:52] [Server thread/INFO]: Default game type: SURVIVAL
+[16:01:52] [Server thread/INFO]: Generating keypair
+[16:01:53] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:01:54] [Server thread/INFO]: Using default channel type
+[16:01:56] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[16:02:06] [Server thread/WARN]: Legacy plugin dynmap v3.0-SNAPSHOT-338 does not specify an api-version.
+[16:02:07] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.1.26
+[16:02:07] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.1.0;8e55131
+[16:02:09] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3eda17e5]
+[16:02:09] [Server thread/INFO]: [Factions] Loading Factions v1.6.9.5-U0.5.15-b233
+[16:02:09] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.1.6
+[16:02:09] [Server thread/INFO]: [Vault] Loading Vault v1.7.2-b107
+[16:02:09] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.2-SNAPSHOT;bf2593e
+[16:02:09] [Server thread/INFO]: [dynmap] Loading dynmap v3.0-SNAPSHOT-338
+[16:02:09] [Server thread/INFO]: [dynmap] version=git-Paper-44 (MC: 1.16.1)
+[16:02:09] [Server thread/ERROR]: [dynmap] Unable to find method getById for net.minecraft.server.v1_16_R1.Block
+[16:02:09] [Server thread/ERROR]: [dynmap] Unable to find field material for net.minecraft.server.v1_16_R1.Block
+[16:02:09] [Server thread/ERROR]: [dynmap] Unable to find method a for net.minecraft.server.v1_16_R1.BiomeBase
+[16:02:09] [Server thread/ERROR]: [dynmap] Unable to find field y for net.minecraft.server.v1_16_R1.BiomeBase
+[16:02:10] [Server thread/ERROR]: [dynmap] Unable to find field chunkProvider for net.minecraft.server.v1_16_R1.World
+[16:02:10] [Server thread/INFO]: [dynmap] Unload queue not found - default to unload all chunks
+[16:02:10] [Server thread/INFO]: [dynmap] inhabitedTicks field not found - inhabited shader not functional
+[16:02:10] [Server thread/ERROR]: [dynmap] Unable to find method d for net.minecraft.server.v1_16_R1.WorldBorder
+[16:02:10] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_16_R1.CraftServer] Error initializing dynmap - bukkit version incompatible! initializing dynmap v3.0-SNAPSHOT-338 (Is it up to date?)
+java.lang.IllegalArgumentException: Error initializing dynmap - bukkit version incompatible!
+	at org.dynmap.bukkit.helper.BukkitVersionHelperGeneric.<init>(BukkitVersionHelperGeneric.java:166) ~[?:?]
+	at org.dynmap.bukkit.helper.BukkitVersionHelperCB.<init>(BukkitVersionHelperCB.java:45) ~[?:?]
+	at org.dynmap.bukkit.Helper.getHelper(Helper.java:47) ~[?:?]
+	at org.dynmap.bukkit.DynmapPlugin.onLoad(DynmapPlugin.java:821) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:208) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:10] [Server thread/INFO]: [Essentials] Loading Essentials v2.18.0.0
+[16:02:10] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect v2.18.0.0
+[16:02:10] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.18.0.0
+[16:02:10] [Server thread/INFO]: [EssentialsGeoIP] Loading EssentialsGeoIP v2.18.0.0
+[16:02:10] [Server thread/INFO]: [EssentialsAntiBuild] Loading EssentialsAntiBuild v2.18.0.0
+[16:02:10] [Server thread/INFO]: [mcMMO] Loading mcMMO v2.1.126-SNAPSHOT
+[16:02:10] [Server thread/INFO]: mcMMO has registered WG flags successfully!
+[16:02:10] [Server thread/INFO]: [WorldBorder] Loading WorldBorder v1.9.10 (beta)
+[16:02:10] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.18.0.0
+[16:02:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:02:10] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.1.26
+[16:02:10] [Server thread/INFO]:         __    
+[16:02:10] [Server thread/INFO]:   |    |__)   LuckPerms v5.1.26
+[16:02:10] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[16:02:10] [Server thread/INFO]: 
+[16:02:10] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[16:02:15] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[16:02:24] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[16:02:24] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[16:02:25] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 14965ms)
+[16:02:25] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.1.0;8e55131
+[16:02:25] [Server thread/WARN]: [WorldEdit] Loaded class net.milkbowl.vault.permission.Permission from Vault v1.7.2-b107 which is not a depend, softdepend or loadbefore of this plugin.
+[16:02:25] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[16:02:26] [Server thread/WARN]: 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
+
+[16:02:27] [Server thread/INFO]: [Vault] Enabling Vault v1.7.2-b107
+[16:02:27] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.18.0.0 which is not a depend, softdepend or loadbefore of this plugin.
+[16:02:27] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[16:02:27] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[16:02:27] [Server thread/INFO]: [Vault] Enabled Version 1.7.2-b107
+[16:02:27] [Server thread/WARN]: [LuckPerms] Loaded class net.milkbowl.vault.permission.Permission from Vault v1.7.2-b107 which is not a depend, softdepend or loadbefore of this plugin.
+[16:02:27] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[16:02:27] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[16:02:27] [Server thread/INFO]: Preparing level "world"
+[16:02:28] [Server thread/INFO]: -------- World Settings For [world] --------
+[16:02:28] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[16:02:28] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[16:02:28] [Server thread/INFO]: Item Despawn Rate: 6000
+[16:02:28] [Server thread/INFO]: Item Merge Radius: 2.5
+[16:02:28] [Server thread/INFO]: View Distance: 10
+[16:02:28] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[16:02:28] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[16:02:28] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Cane Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Melon Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Potato Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Vine Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[16:02:28] [Server thread/INFO]: Experience Merge Radius: 3.0
+[16:02:28] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[16:02:28] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[16:02:28] [Server thread/INFO]: Max TNT Explosions: 100
+[16:02:28] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[16:02:28] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[16:02:28] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[16:02:28] [Server thread/INFO]: Mob Spawn Range: 8
+[16:02:29] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[16:02:29] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[16:02:29] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[16:02:29] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[16:02:29] [Server thread/INFO]: Item Despawn Rate: 6000
+[16:02:29] [Server thread/INFO]: Item Merge Radius: 2.5
+[16:02:29] [Server thread/INFO]: View Distance: 10
+[16:02:29] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[16:02:29] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[16:02:29] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Cane Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Melon Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Potato Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Vine Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Experience Merge Radius: 3.0
+[16:02:29] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[16:02:29] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[16:02:29] [Server thread/INFO]: Max TNT Explosions: 100
+[16:02:29] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[16:02:29] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[16:02:29] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[16:02:29] [Server thread/INFO]: Mob Spawn Range: 8
+[16:02:29] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[16:02:29] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[16:02:29] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[16:02:29] [Server thread/INFO]: Item Despawn Rate: 6000
+[16:02:29] [Server thread/INFO]: Item Merge Radius: 2.5
+[16:02:29] [Server thread/INFO]: View Distance: 10
+[16:02:29] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[16:02:29] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[16:02:29] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Cane Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Melon Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Potato Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Vine Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[16:02:29] [Server thread/INFO]: Experience Merge Radius: 3.0
+[16:02:29] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[16:02:29] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[16:02:29] [Server thread/INFO]: Max TNT Explosions: 100
+[16:02:29] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[16:02:29] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[16:02:29] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[16:02:29] [Server thread/INFO]: Mob Spawn Range: 8
+[16:02:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:02:34] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Preparing spawn area: 0%
+[16:02:34] [Server thread/INFO]: Time elapsed: 4970 ms
+[16:02:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:02:36] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[16:02:36] [Server thread/INFO]: Time elapsed: 1144 ms
+[16:02:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:02:38] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[16:02:38] [Server thread/INFO]: Time elapsed: 1937 ms
+[16:02:38] [Server thread/INFO]: [Factions] Enabling Factions v1.6.9.5-U0.5.15-b233
+[16:02:38] [Server thread/INFO]: [Factions] === Starting up! ===
+[16:02:38] [Server thread/INFO]: [Factions] 
+[16:02:38] [Server thread/INFO]: [Factions] Factions UUID!
+[16:02:38] [Server thread/INFO]: [Factions] Version 1.6.9.5-U0.5.15-b233
+[16:02:38] [Server thread/INFO]: [Factions] 
+[16:02:38] [Server thread/INFO]: [Factions] Need support? https://factions.support/help/
+[16:02:38] [Server thread/INFO]: [Factions] 
+[16:02:38] [Server thread/INFO]: [Factions] Detected Minecraft 1.16.1
+[16:02:38] [Server thread/INFO]: [Factions] 
+[16:02:38] [Server thread/INFO]: [Factions] Server UUID c2a73956-796e-4fac-afac-00143ade68b1
+[16:02:41] [Server thread/INFO]: [Factions] Loaded 870 material mappings.
+[16:02:42] [Server thread/INFO]: [Factions] Loaded 1 players in 4 factions with 10 claims
+[16:02:42] [Server thread/INFO]: [Factions] Using POWER for land/raid control. Enabling power commands.
+[16:02:42] [Server thread/INFO]: [Factions] Enabling /f fly command
+[16:02:42] [Server thread/INFO]: [Factions] Using BUKKIT as a particle provider
+[16:02:42] [Server thread/INFO]: [Factions] Using REDSTONE as the ParticleEffect for /f sc
+[16:02:42] [Server thread/INFO]: [Factions] Found API support for sending player titles :D
+[16:02:42] [Server thread/INFO]: [Factions] Successfully hooked into LuckPerms for permission contexts!
+[16:02:42] [Server thread/INFO]: [Factions] === Ready to go after 4137ms! ===
+[16:02:42] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.1.6
+[16:02:42] [Server thread/INFO]: [ClearLag] Loading modules...
+[16:02:42] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[16:02:42] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[16:02:42] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[16:02:42] [Thread-16/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.16]...
+[16:02:42] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.2-SNAPSHOT;bf2593e
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[16:02:42] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[16:02:43] [Server thread/INFO]: [WorldGuard] Loading region data...
+[16:02:43] [Server thread/INFO]: [dynmap] Enabling dynmap v3.0-SNAPSHOT-338*
+[16:02:43] [Server thread/INFO]: [dynmap] Dynmap is disabled (unsupported platform)
+[16:02:43] [Server thread/INFO]: [Factions] Enabled Dynmap integration
+[16:02:43] [Server thread/INFO]: [Essentials] Enabling Essentials v2.18.0.0
+[16:02:43] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[16:02:43] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[16:02:43] [Server thread/INFO]: [Essentials] Loaded 25515 items from items.json.
+[16:02:43] [Server thread/INFO]: [Essentials] Using locale en_US
+[16:02:43] [Thread-16/INFO]: [ClearLag] No updates found!
+[16:02:43] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 8 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 8.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 9 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 9.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 10 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 10.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 11 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 11.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 51 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 51.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 90 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 90.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 94 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 94.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 104 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 104.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 105 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 105.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 119 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 119.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 122 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 122.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 124 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 124.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 141 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 141.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 142 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 142.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 150 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 150.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 207 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 207.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 209 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 209.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 217 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 217.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 255 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 255.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 373 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 373.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/ERROR]: [Essentials] Unknown item 453 in item-spawn-blacklist list.
+java.lang.Exception: §4Unknown item name: 453.
+	at com.earth2me.essentials.items.FlatItemDb.get(FlatItemDb.java:117) ~[?:?]
+	at com.earth2me.essentials.items.AbstractItemDb.get(AbstractItemDb.java:87) ~[?:?]
+	at com.earth2me.essentials.Settings._getItemSpawnBlacklist(Settings.java:619) ~[?:?]
+	at com.earth2me.essentials.Settings._lateLoadItemSpawnBlacklist(Settings.java:596) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:290) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:43] [Server thread/INFO]: [Essentials] Metrics disabled per bStats config.
+[16:02:43] [Server thread/INFO]: [Factions] Found and connected to Essentials
+[16:02:43] [Server thread/INFO]: [Factions] Based on main.conf will delete Essentials player homes in their old faction when they leave
+[16:02:44] [Server thread/INFO]: [Factions] Using Essentials for teleportation
+[16:02:44] [Server thread/INFO]: [Vault] [Vault][Economy] Essentials Economy hooked.
+[16:02:44] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[16:02:44] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect v2.18.0.0
+[16:02:44] [Server thread/INFO]: [EssentialsProtect] Continuing to enable Protect.
+[16:02:44] [Server thread/INFO]: [EssentialsProtect] Metrics disabled per bStats config.
+[16:02:44] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.18.0.0
+[16:02:44] [Server thread/INFO]: [EssentialsChat] Metrics disabled per bStats config.
+[16:02:44] [Server thread/INFO]: [EssentialsGeoIP] Enabling EssentialsGeoIP v2.18.0.0
+[16:02:44] [Server thread/ERROR]: [EssentialsGeoIP] No license key found! Please visit https://essentialsx.cf/geoip for first time setup instructions.
+[16:02:44] [Server thread/ERROR]: [EssentialsGeoIP] Failed to read GeoIP database!
+java.io.FileNotFoundException: plugins\EssentialsGeoIP\GeoIP2-Country.mmdb (The system cannot find the file specified)
+	at java.io.RandomAccessFile.open0(Native Method) ~[?:1.8.0_241]
+	at java.io.RandomAccessFile.open(Unknown Source) ~[?:1.8.0_241]
+	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:1.8.0_241]
+	at com.maxmind.db.BufferHolder.<init>(BufferHolder.java:19) ~[?:?]
+	at com.maxmind.db.Reader.<init>(Reader.java:116) ~[?:?]
+	at com.maxmind.geoip2.DatabaseReader.<init>(DatabaseReader.java:66) ~[?:?]
+	at com.maxmind.geoip2.DatabaseReader.<init>(DatabaseReader.java:54) ~[?:?]
+	at com.maxmind.geoip2.DatabaseReader$Builder.build(DatabaseReader.java:160) ~[?:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIPPlayerListener.reloadConfig(EssentialsGeoIPPlayerListener.java:162) ~[?:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIPPlayerListener.<init>(EssentialsGeoIPPlayerListener.java:43) ~[?:?]
+	at com.earth2me.essentials.geoip.EssentialsGeoIP.onEnable(EssentialsGeoIP.java:33) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugin(CraftServer.java:500) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.enablePlugins(CraftServer.java:414) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.loadWorld(MinecraftServer.java:471) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.init(DedicatedServer.java:241) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:940) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:44] [Server thread/INFO]: [EssentialsGeoIP] This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com/.
+[16:02:44] [Server thread/INFO]: [EssentialsGeoIP] Metrics disabled per bStats config.
+[16:02:44] [Server thread/INFO]: [EssentialsAntiBuild] Enabling EssentialsAntiBuild v2.18.0.0
+[16:02:44] [Server thread/INFO]: [EssentialsAntiBuild] Metrics disabled per bStats config.
+[16:02:44] [Server thread/INFO]: [mcMMO] Enabling mcMMO v2.1.126-SNAPSHOT
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_SWORD, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_SHOVEL, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_PICKAXE, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_AXE, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_HOE, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_HELMET, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_CHESTPLATE, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_LEGGINGS, skipping.
+[16:02:44] [Server thread/INFO]: [mcMMO] Could not find a valid repair material for item named NETHERITE_BOOTS, skipping.
+[16:02:45] [Server thread/INFO]: [mcMMO] enabling Acrobatics Skills
+[16:02:45] [Server thread/INFO]: [mcMMO] registered subskill: Roll
+[16:02:45] [Server thread/INFO]: [mcMMO] 0 entries in mcMMO World Blacklist
+[16:02:45] [Server thread/INFO]: [WorldBorder] Enabling WorldBorder v1.9.10 (beta)
+[16:02:45] [Server thread/INFO]: [WorldBorder] [CONFIG] Using elliptic/round border, knockback of 3.0 blocks, and timer delay of 5.
+[16:02:45] [Server thread/INFO]: [WorldBorder] [CONFIG] Border-checking timed task started.
+[16:02:45] [Server thread/INFO]: [WorldBorder] [CONFIG] World "world" has border radius 5365x2677 at X: 0.0 Z: 0.0 (shape override: rectangular/square) (wrapping)
+[16:02:45] [Server thread/INFO]: [WorldBorder] [CONFIG] DynMap is present, but an NPE (type 1) was encountered while trying to integrate. Border display disabled.
+[16:02:45] [Server thread/INFO]: [WorldBorder] For reference, the main world's spawn location is at X: 1105.0 Y: 69.0 Z: -114.0
+[16:02:45] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.18.0.0
+[16:02:45] [Server thread/INFO]: [EssentialsSpawn] Metrics disabled per bStats config.
+[16:02:45] [Server thread/INFO]: Running delayed init tasks
+[16:02:45] [Server thread/INFO]: [Factions] Found economy plugin through Vault: Essentials Economy
+[16:02:45] [Server thread/INFO]: [Factions] NOTE: Economy is disabled. You can enable it in config/main.conf
+[16:02:45] [Server thread/INFO]: [Factions] Using Vault with permissions plugin LuckPerms
+[16:02:45] [Server thread/INFO]: Done (53.683s)! For help, type "help"
+[16:02:45] [Server thread/INFO]: Timings Reset
+[16:02:46] [Craft Scheduler Thread - 5/INFO]: [ClearLag] 0 Logs have been removed!
+[16:02:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:02:58] [User Authenticator #1/INFO]: UUID of player Vynzii is 2dbc3e87-59f2-4882-83b6-77423511e662
+[16:02:59] [Server thread/INFO]: Vynzii[/192.168.1.219:52555] logged in with entity id 23 at ([world]5181.250163653393, 40.0, 1301.0965257123573)
+[16:02:59] [Server thread/INFO]: Welcome Vynzii to the Earth realm
+[16:03:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:06] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:03:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:04:51] [Server thread/INFO]: Vynzii issued server command: /give Vynzii flint_and_steel
+[16:04:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:13] [Server thread/INFO]: Vynzii issued server command: /gmc
+[16:05:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:22] [Server thread/INFO]: Vynzii issued server command: /gms
+[16:05:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:42] [Server thread/INFO]: Vynzii issued server command: /lagg clear
+[16:05:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:05:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:16] [Server thread/INFO]: Vynzii issued server command: /fly
+[16:06:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:06:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:07:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:08:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:00] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:05] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:06] [Server thread/INFO]: Vynzii issued server command: /lagg clear
+[16:09:10] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:15] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:20] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:25] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:30] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:35] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:40] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:45] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:49] [Server thread/INFO]: Vynzii lost connection: Disconnected
+[16:09:49] [Server thread/INFO]: Vynzii left the game
+[16:09:50] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:55] [Server thread/WARN]: [Factions] Task #102 for Factions v1.6.9.5-U0.5.15-b233 generated an exception
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.getMarkerAPI(DynmapPlugin.java:1042) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.updateCore(EngineDynmap.java:128) ~[?:?]
+	at com.massivecraft.factions.integration.dynmap.EngineDynmap.lambda$init$0(EngineDynmap.java:100) ~[?:?]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftTask.run(CraftTask.java:99) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.b(MinecraftServer.java:1291) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.a(MinecraftServer.java:1212) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1000) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:56] [Server thread/INFO]: Stopping the server
+[16:09:56] [Server thread/INFO]: Stopping server (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PAPER)
+[16:09:56] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.18.0.0
+[16:09:56] [Server thread/INFO]: [WorldBorder] Disabling WorldBorder v1.9.10 (beta)
+[16:09:56] [Server thread/INFO]: [WorldBorder] [CONFIG] Border-checking timed task stopped.
+[16:09:56] [Server thread/INFO]: [mcMMO] Disabling mcMMO v2.1.126-SNAPSHOT
+[16:09:56] [Server thread/INFO]: [mcMMO] Saving mcMMOPlayers... (0)
+[16:09:56] [Server thread/INFO]: [mcMMO] Finished save operation for 0 players!
+[16:09:56] [Server thread/INFO]: [EssentialsAntiBuild] Disabling EssentialsAntiBuild v2.18.0.0
+[16:09:56] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP v2.18.0.0
+[16:09:56] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.18.0.0
+[16:09:56] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect v2.18.0.0
+[16:09:56] [Server thread/INFO]: [Essentials] Disabling Essentials v2.18.0.0
+[16:09:56] [Server thread/INFO]: [Vault] [Vault][Economy] Essentials Economy unhooked.
+[16:09:56] [Server thread/INFO]: [dynmap] Disabling dynmap v3.0-SNAPSHOT-338
+[16:09:56] [Server thread/ERROR]: Error occurred while disabling dynmap v3.0-SNAPSHOT-338 (Is it up to date?)
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.onDisable(DynmapPlugin.java:998) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:265) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:415) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:516) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:502) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:495) ~[patched_1.16.1.jar:git-Paper-44]
+	at org.bukkit.craftbukkit.v1_16_R1.CraftServer.disablePlugins(CraftServer.java:434) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.stop(MinecraftServer.java:774) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.DedicatedServer.stop(DedicatedServer.java:699) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.v(MinecraftServer.java:1047) ~[patched_1.16.1.jar:git-Paper-44]
+	at net.minecraft.server.v1_16_R1.MinecraftServer.lambda$a$0(MinecraftServer.java:177) ~[patched_1.16.1.jar:git-Paper-44]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+[16:09:56] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.2-SNAPSHOT;bf2593e
+[16:09:56] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[16:09:56] [Server thread/INFO]: [Vault] Disabling Vault v1.7.2-b107
+[16:09:56] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[16:09:56] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.1.6
+[16:09:56] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[16:09:56] [Server thread/INFO]: [Factions] Disabling Factions v1.6.9.5-U0.5.15-b233
+[16:09:56] [Server thread/INFO]: [Factions] Disabled
+[16:09:56] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.1.0;8e55131
+[16:09:56] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[16:09:56] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.1.26
+[16:09:56] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[16:09:56] [Server thread/INFO]: [LuckPerms] Closing storage...
+[16:09:56] [Server thread/INFO]: [LuckPerms] Goodbye!
+[16:09:56] [Server thread/INFO]: Saving players
+[16:09:56] [Server thread/INFO]: Saving worlds
+[16:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:09:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:09:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:09:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:09:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:09:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:09:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:09:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:09:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:09:59] [Server thread/INFO]: Flushing Chunk IO
+[16:09:59] [Server thread/INFO]: Closing Thread Pool
+[16:09:59] [Server thread/INFO]: Closing Server
